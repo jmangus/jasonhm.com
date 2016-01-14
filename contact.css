@@ -1,0 +1,310 @@
+* {
+	font-family: 'Fjalla One', sans-serif;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;	
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+	text-decoration: none !important;
+}
+
+a:hover {
+	text-decoration: none !important;
+}
+
+p {
+  font-family: 'Cantarell', sans-serif;
+}
+
+.flair {/* Colors half of title */
+  color: #ff5252;
+}
+
+/* --------- navigation menu ------- */
+
+/*Desktop navigation */
+.nav2 {
+  position: fixed;
+  height: 55px;
+  background-color: #1c1c1c;
+  width: 100%;
+  font-size: 24px;
+  text-transform: uppercase;
+  z-index: 999;
+}
+
+.nav2 ul {
+  padding: 10px;
+  text-align: center;
+}
+
+.nav2 ul li {
+  list-style-type: none;
+  display: inline;
+  padding: 0 40px;
+}
+
+.nav2 a {
+  color: #fff;
+}
+
+.nav2 a:hover {
+  color: #ff5252;
+}
+
+@media (max-width: 767px){
+  .desktop-nav{
+    display: none;
+  }
+  .nav2 {
+    display: none;
+  }
+}
+
+/*mobile navigation */
+.mobile-nav {
+  position: fixed;
+  height: 55px;
+  background-color: #1c1c1c;
+  width: 100%;
+  font-size: 24px;
+  text-transform: uppercase;
+  z-index: 9999;
+}
+
+.mobile-logo {
+  margin: 5px 0 0 20px;
+}
+
+@media (min-width: 768px){
+  .mobile-logo {
+    display: none;
+  }
+}
+.mobile-toggle {
+  display: none;
+  cursor: pointer;
+  font-size: 20px;
+  position: absolute;
+  right: 22px;
+  top: 0;
+  width: 30px;
+  margin-top: 15px;
+  -webkit-transition: all 200ms ease-in;
+  -moz-transition: all 200ms ease-in;
+  transition: all 200ms ease-in;
+}
+
+@media only screen and (max-width: 766px) {
+  .mobile-toggle {
+    display: block;
+  }
+}
+
+.mobile-toggle span {
+  width: 30px;
+  height: 4px;
+  margin-bottom: 6px;
+  border-radius: 1000px;
+  background: #fff;
+  display: block;
+}
+
+.mobile-nav a {
+  color: #fff;
+}
+
+.mobile-nav a:hover {
+  color: #ff5252;
+}
+
+.mobile-menu {
+  height: 300px;
+  background-color: #1c1c1c;
+}
+
+.mobile-menu ul {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.mobile-menu ul li {
+  list-style-type: none;
+  padding: 10px 50px 10px 0;
+}
+
+.mobile-hide {
+  margin-top: -350px;
+}
+
+@media (min-width: 768px) {
+  .mobile-nav {
+    display: none;
+  }
+}
+/* ------- End of navigation menus -------- */
+
+/* main contact section */
+.contact-title {
+	text-align: center;
+	padding: 0;
+	margin: 50px 0 0 0;
+}
+
+.contact-title h2 {
+	font-size: 40px;
+	padding:25px;
+}
+
+@media (max-width: 460px){
+  .contact-title h2 {
+    font-size: 30px;
+  }
+}
+
+.contact-title p{
+	font-size: 20px;
+	padding: 10px;
+	margin: 0 0 25px 0;
+}
+
+@media (max-width: 991px){
+	.contact-title {
+		margin-top: 75px;
+	}
+}
+
+/* Contact form */
+.contact-boxes {
+	margin-top: 150px;
+}
+
+body {
+    color: #1c1c1c;
+    background: rgba(245,245,245,1);
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    max-width: 600px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.contact-form {
+	margin-bottom: 150px;
+}
+
+.form-title {
+	text-transform: uppercase;
+}
+.contact-form input, .contact-form textarea {
+	border: 0;
+	outline: 0;
+	display: block;
+	width: 100%;
+	margin-top: 1em;
+	padding: .8em;
+	font-weight: 300;
+	font-size: 14px;
+	border-radius: 6px;
+	box-shadow: 0 1px 1px rgba(34,34,34,0.1);
+	resize: none;
+}
+
+.contact-form textarea {
+    margin-bottom: 1em;
+    height: 125px;
+}
+
+.contact-form input:focus {
+    box-shadow: 0 0px 2px #ff5252!important;
+}
+
+.contact-form textarea:focus {
+    box-shadow: 0 0px 2px #ff5252!important;
+} 
+
+/* submit button for contact form */
+#submit {
+	padding-bottom: 50px;
+	font-size: 24px;
+	margin-left: 35%;
+	width: 170px;
+	height: 60px;
+	border:2px solid #ff5252;
+    color: #ff5252; 
+    background-color: #f1f1f1;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+    
+#submit:hover {
+    background-color: #ff5252;
+    color: #fff;
+}
+
+/* Social media buttons */
+#img {
+	margin: 25px;
+}
+
+.social-contact {
+	background-color: #fff;
+	border-top: 1px solid #e0e0e0;
+}
+
+.social {
+	margin: 0;
+	width: 100%;
+	text-align: center;
+	padding: 80px 0 100px 0;
+	background-color: #fff;
+}
+
+/*Footer*/
+.footer {
+	min-height: 150px;
+	background: #e0e0e0;
+	color: white;
+ 	margin: 0 auto;
+ 	padding-top: 10px;
+ 	border-top: 1px solid #e0e0e0;
+}
+
+.footer-row {
+	padding: 25px;
+}
+
+.copyright {
+	background-color: #e0e0e0;
+	color: #fff;
+	text-align: center;
+  	height: 25px;
+}
+
+.copy p {
+  border-top: 1px solid white;
+  padding: 15px;
+}
+
+
+
