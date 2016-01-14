@@ -1,0 +1,132 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+	  	<meta name="description" content="The online web development portfolio of Jason Mangus - Atlanta based Web Developer">
+		<meta name="keywords" content="contact, web development, web developer, web, front-end, atlanta, Jason Mangus, portfolio, html, css, javascript, freelance">
+		<meta name="author" content="Jason Mangus">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	  	<title>Contact Jason</title>
+		<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link href="http://fonts.googleapis.com/css?family=Fjalla+One|Cantarell:400,400italic,700italic,700" rel="stylesheet" type="text/css"/>
+		<link rel="stylesheet" type="text/css" href="css/contact.css">
+		<link rel="stylesheet" type="text/css" href="css/animate.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script><script src="js/bootstrap.min.js"></script>
+		<script src="js/jquery.textillate.js"></script>
+		<script src="js/jquery.lettering.js"></script>
+	</head>
+	<body>
+		<div class="mobile-nav"> <!-- Mobile navigation and dropdown menu-->
+			<div class="mobile-logo">
+				<img src="images/logowhite.png" alt="mobile logo" height="40px">
+			</div>
+			<div class="mobile-toggle mobile-toggle-btn">
+		        <span></span>
+		        <span></span>
+		        <span></span>
+		    </div>
+		    <div class="nav-function mobile-menu mobile-hide">
+		        <ul>
+		      		<li><a href="index.html" class="mobile-toggle-btn">Home</a></li>
+		            <li><a href="index.html#about" class="mobile-toggle-btn">About Me</a></li>
+		            <li><a href="index.html#projects" class="mobile-toggle-btn">Projects</a></li>
+		            <li><a href="#contact" class="mobile-toggle-btn">Contact</a></li>
+		        </ul>
+		    </div>
+		</div>
+		<!-- Beginning of desktop version of site--> 
+		<div class="nav2"> <!-- Mobile navigation and dropdown menu-->
+    		<ul>
+	    		<li id="nav-lists"><a href="index.html">Home</a></li>
+	       		<li id="nav-lists"><a href="index.html#about">About Me</a></li>
+	        	<li id="nav-lists"><a href="index.html#projects">Projects</a></li>
+	        	<li id="nav-lists"><a href="#contact">Contact</a></li>
+	    	</ul>
+		</div>
+		<div class="contact-main" id="contact"> <!-- Contact/main section -->
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 contact-title">
+						<h2> - <span class="flair">CONTACT</span>INFORMATION - </h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12 contact-title">
+						<p>Thank you for your interest in my work. Feel free to connect with me around the web, or send me a message directly.</p>
+					</div>
+				</div>
+				<!-- Contact Form -->
+				<div class="row">
+					<div class="col-md-12 form-title">
+						<h1>Get in Touch</h1>
+						<form action="mailto:connect@jasonhm.com" method="post">
+							<fieldset class="contact-form">
+								<input type="text" name="name" placeholder="Name" required>
+								<input type="email" name="email" placeholder="Email address" required>
+								<input type="text" name="subject" placeholder="Subject" required>
+								<textarea name="message" placeholder="Add your message here" required></textarea>
+								<input type="submit" id="submit" value="Submit" >
+							</fieldset>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="social-contact"> <!-- social media buttons -->
+			<div class="container social-container">
+				<div class="row social">
+					<div class="col-md-12">
+						<a href="https://github.com/jmangus"><img src="images/gitcolor.png" height="60px" id="img" alt="Github icon"></a>
+						<a href="https://www.linkedin.com/in/jason-m-1b6081111"><img src="images/linkedincolor.png" height="60px" id="img" alt="LinkedIn icon"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer"><!-- footer -->
+			<div class="container">
+				<div class="row footer-row">
+					<div class="col-md-12 col-sm-12 col-xs-12">
+						<img src="images/logowhite.png" alt="app" class="img-responsive center-block footer-logo" height=80px width=80px>
+					</div>
+				</div>
+				<div class="row copyright">
+					<div class="col-md-12  col-sm-12 col-xs-12 copy">
+						<p>&copy 2016. All Rights Reserved.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script>
+		//Sticky header
+		function fixDiv() {
+		    var $div = $(".nav2");
+		    if ($(window).scrollTop() > $div.data("top")) { 
+		        $('.nav2').addClass("menu-div-scroll"); 
+		    }
+		    else {
+		        $('.nav2').removeClass("menu-div-scroll");
+		    }
+		}
+		// set nav to original position on load
+		$(".nav2").data("top", $(".nav2").offset().top); 
+		$(window).scroll(fixDiv);
+		//mobile menu dropdown
+		$('.mobile-toggle-btn').click(function(){
+				$('.nav-function').toggleClass('mobile-hide', 400, 'easeInSine');
+			});
+	</script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
